@@ -1,0 +1,3185 @@
+<!DOCTYPE html><html data-pathToRoot="../"><head><meta charset="utf-8"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta><title>playerOrder</title><link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"></link><script type="text/javascript" src="../scripts/theme.js"></script><script type="text/javascript" src="../scripts/searchData.js" defer="true"></script><script type="text/javascript" src="../scripts/scastieConfiguration.js" defer="true"></script><link rel="stylesheet" href="../styles/theme/bundle.css"></link><link rel="stylesheet" href="../styles/theme/components/bundle.css"></link><link rel="stylesheet" href="../styles/theme/components/button/bundle.css"></link><link rel="stylesheet" href="../styles/theme/layout/bundle.css"></link><link rel="stylesheet" href="../styles/nord-light.css"></link><link rel="stylesheet" href="../styles/dotty-icons.css"></link><link rel="stylesheet" href="../styles/filter-bar.css"></link><link rel="stylesheet" href="../styles/code-snippets.css"></link><link rel="stylesheet" href="../styles/searchbar.css"></link><link rel="stylesheet" href="../styles/social-links.css"></link><link rel="stylesheet" href="../styles/versions-dropdown.css"></link><link rel="stylesheet" href="../styles/content-contributors.css"></link><link rel="stylesheet" href="../styles/fontawesome.css"></link><script type="text/javascript" src="../hljs/highlight.pack.js" defer="true"></script><script type="text/javascript" src="../scripts/hljs-scala3.js" defer="true"></script><script type="text/javascript" src="../scripts/ux.js" defer="true"></script><script type="text/javascript" src="../scripts/common/component.js" defer="true"></script><script type="text/javascript" src="../scripts/common/utils.js" defer="true"></script><script type="text/javascript" src="../scripts/components/FilterBar.js" defer="true"></script><script type="text/javascript" src="../scripts/components/DocumentableList.js" defer="true"></script><script type="text/javascript" src="../scripts/components/Input.js" defer="true"></script><script type="text/javascript" src="../scripts/components/FilterGroup.js" defer="true"></script><script type="text/javascript" src="../scripts/components/Filter.js" defer="true"></script><script type="text/javascript" src="../scripts/scaladoc-scalajs.js" defer="true"></script><script type="text/javascript" src="../scripts/contributors.js" defer="true"></script><script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" defer="true"></script><script type="text/javascript" src="https://d3js.org/d3.v6.min.js" defer="true"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/graphlib-dot@0.6.2/dist/graphlib-dot.min.js" defer="true"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js" defer="true"></script><script type="text/javascript" src="https://scastie.scala-lang.org/embedded.js" defer="true"></script><script type="text/javascript" src="../scripts/data.js" defer="true"></script><link rel="stylesheet" href="../styles/apistyles.css"></link><script>var pathToRoot = "../";</script></head><body><div id=""><div id="header" class="body-small"><div class="header-container-left"><a href="../" class="logo-container"><span class="project-name h300">Palace</span></a><span onclick="dropdownHandler(event)" class="text-button with-arrow" id="dropdown-trigger"><a></a></span><div id="version-dropdown" class="dropdown-menu"></div></div><div class="header-container-right"><button id="search-toggle" class="icon-button"></button><span id="theme-toggle" class="icon-button"></span><span id="mobile-menu-toggle" class="icon-button hamburger"></span></div></div><div id="mobile-menu"><div class="mobile-menu-header body-small"><span class="mobile-menu-logo"><span class="project-name h300">Palace</span></span><button id="mobile-menu-close" class="icon-button close"></button></div><div class="mobile-menu-container body-medium"><input id="mobile-scaladoc-searchbar-input" class="scaladoc-searchbar-input" type="search" placeholder="Find anything"></input><span id="mobile-theme-toggle" class="mobile-menu-item mode"></span></div></div><span id="mobile-sidebar-toggle" class="floating-button"></span><div id="leftColumn" class="body-small"><div class="switcher-container"><a id="api-nav-button" class="switcher h100 selected" href="../index.html">API</a></div><nav id="api-nav" class="side-menu"><div class="ni n0 expanded"><span class="nh h100 expanded cs"><button class="ar icon-button expanded"></button><a href="../view.html"><span class="micon pa"></span><span>view</span></a></span><div class="ni n1 expanded"><span class="nh h100 expanded cs"><button class="ar icon-button expanded"></button><a href="SimpleView.html"><span class="micon cl"></span><span>SimpleView</span></a></span><div class="ni n2 "><span class="nh "><a href="SimpleView$advancePO_Btn$.html"><span class="micon ob"></span><span>advancePO_Btn</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$borderPanel$.html"><span class="micon ob"></span><span>borderPanel</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$checkWinner_Btn$.html"><span class="micon ob"></span><span>checkWinner_Btn</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$doGame_Btn$.html"><span class="micon ob"></span><span>doGame_Btn</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$doMove_Btn$.html"><span class="micon ob"></span><span>doMove_Btn</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$doTurn_Btn$.html"><span class="micon ob"></span><span>doTurn_Btn</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$doshuffle$.html"><span class="micon ob"></span><span>doshuffle</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$gameAreaPanel$.html"><span class="micon ob"></span><span>gameAreaPanel</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$gameControlsPanel$.html"><span class="micon ob"></span><span>gameControlsPanel</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$gameText$.html"><span class="micon ob"></span><span>gameText</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$initialize_Btn$.html"><span class="micon ob"></span><span>initialize_Btn</span></a></span></div><div class="ni n2 expanded"><span class="nh h100 selected"><a href="#"><span class="micon ob"></span><span>playerOrder</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$playerOrderPanel$.html"><span class="micon ob"></span><span>playerOrderPanel</span></a></span></div><div class="ni n2 "><span class="nh "><a href="SimpleView$strategyPanel$.html"><span class="micon ob"></span><span>strategyPanel</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="View.html"><span class="micon tr"></span><span>View</span></a></span></div></div><div class="ni n0"><span class="nh "><button class="ar icon-button "></button><a href="../model.html"><span class="micon pa"></span><span>model</span></a></span><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../model/game_components.html"><span class="micon pa"></span><span>game_components</span></a></span><div class="ni n2 "><span class="nh "><a href="../model/game_components/Cards.html"><span class="micon cl"></span><span>Cards</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../model/game_components/Deck$.html"><span class="micon ob"></span><span>Deck</span></a></span></div><div class="ni n2"><span class="nh "><button class="ar icon-button "></button><a href="../model/game_components/Player.html"><span class="micon cl"></span><span>Player</span></a></span><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Guard_strategy.html"><span class="micon cl"></span><span>Guard_strategy</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Guard_strategy_Default.html"><span class="micon cl"></span><span>Guard_strategy_Default</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Guard_strategy_High_Guard.html"><span class="micon cl"></span><span>Guard_strategy_High_Guard</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Guard_strategy_Low_Guard.html"><span class="micon cl"></span><span>Guard_strategy_Low_Guard</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Move_strategy.html"><span class="micon cl"></span><span>Move_strategy</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Move_strategy_Default.html"><span class="micon cl"></span><span>Move_strategy_Default</span></a></span></div><div class="ni n3 "><span class="nh "><a href="../model/game_components/Player$Move_strategy_Highest_Card.html"><span class="micon cl"></span><span>Move_strategy_Highest_Card</span></a></span></div></div><div class="ni n2 "><span class="nh "><a href="../model/game_components/Table$.html"><span class="micon ob"></span><span>Table</span></a></span></div></div><div class="ni n1"><span class="nh "><button class="ar icon-button "></button><a href="../model/simulation_components.html"><span class="micon pa"></span><span>simulation_components</span></a></span><div class="ni n2 "><span class="nh "><a href="../model/simulation_components/Menu$.html"><span class="micon ob"></span><span>Menu</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../model/simulation_components/Pile$.html"><span class="micon ob"></span><span>Pile</span></a></span></div><div class="ni n2 "><span class="nh "><a href="../model/simulation_components/PlayerOrder$.html"><span class="micon ob"></span><span>PlayerOrder</span></a></span></div></div><div class="ni n1 "><span class="nh "><a href="../model/Model.html"><span class="micon cl"></span><span>Model</span></a></span></div></div><div class="ni n0"><span class="nh "><button class="ar icon-button "></button><a href="../controller.html"><span class="micon pa"></span><span>controller</span></a></span><div class="ni n1 "><span class="nh "><a href="../controller/Controller.html"><span class="micon cl"></span><span>Controller</span></a></span></div></div><div class="ni n0"><span class="nh "><button class="ar icon-button "></button><a href="../_main.html"><span class="micon pa"></span><span>_main</span></a></span><div class="ni n1 "><span class="nh "><a href="../_main/Palace$.html"><span class="micon ob"></span><span>Palace</span></a></span></div><div class="ni n1 "><span class="nh "><a href="../_main/main.html"><span class="micon cl"></span><span>main</span></a></span></div></div></nav></div><div id="footer" class="body-small"><div class="left-container">Generated with</div><div class="right-container"><div class="text"></div></div><div class="text-mobile"></div></div><div id="scaladoc-searchBar"></div><div id="main"><div class="breadcrumbs container"><a href="../index.html">Palace</a>/<a href="../view.html">view</a>/<a href="SimpleView.html">SimpleView</a>/<a href="SimpleView$playerOrder$.html">playerOrder</a></div><div id="content" class="body-medium"><div><div class="cover-header">
+ <span class="icon"><span class="micon ob"></span></span>
+ <h1 class="h600 single">playerOrder</h1>
+</div>
+<div class="fqname body-large">
+ <span>view.SimpleView.playerOrder</span>
+</div>
+<div class="main-signature mono-small-block">
+ <div class="signature">
+  <span class="signature-short"><span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="SimpleView$playerOrder$.html" t="n" class="documentableName ">playerOrder</a><span t="k"> extends </span><span data-unresolved-link="" t="t">TextArea</span></span><span class="signature-long"></span>
+ </div>
+</div>
+<div class="cover">
+ <div class="doc"></div>
+ <section id="attributes">
+  <h2 class="h500">Attributes</h2>
+  <dl class="attributes">
+   <dt class="body-small">
+    Graph
+   </dt>
+   <dd class="body-medium">
+    <div id="inheritance-diagram" class="diagram-class showGraph">
+     <button type="button" class="label-only-button" onclick="zoomOut()">Reset zoom</button><button type="button" class="label-only-button" onclick="hideGraph()">Hide graph</button><button type="button" class="label-only-button" onclick="showGraph()">Show graph</button>
+     <svg id="graph"></svg>
+     <script type="text/dot" id="dot"> digraph g {
+ node0 [id=node0, label="<span style=\"color: #FFFFFF;\">object <a href=\"SimpleView$playerOrder$.html\" t=\"n\">playerOrder</a>.type</span>", class="object vertex"];
+node1 [id=node1, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">TextArea</span></span>", class="class vertex"];
+node2 [id=node2, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">TextComponent</span></span>", class="class vertex"];
+node3 [id=node3, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Component</span></span>", class="class vertex"];
+node4 [id=node4, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Object</span></span>", class="class vertex"];
+node5 [id=node5, label="<span style=\"color: #FFFFFF;\">class <span data-unresolved-link=\"\" t=\"n\">Any</span></span>", class="class vertex"];
+node6 [id=node6, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Matchable</span></span>", class="trait vertex"];
+node7 [id=node7, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">UIElement</span></span>", class="trait vertex"];
+node8 [id=node8, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Proxy</span></span>", class="trait vertex"];
+node9 [id=node9, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Publisher</span></span>", class="trait vertex"];
+node10 [id=node10, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">Reactor</span></span>", class="trait vertex"];
+node11 [id=node11, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">HasColumns</span></span>", class="trait vertex"];
+node12 [id=node12, label="<span style=\"color: #FFFFFF;\">trait <span data-unresolved-link=\"\" t=\"n\">HasRows</span></span>", class="trait vertex"];
+
+
+ node0 -> node1;
+node1 -> node2;
+node2 -> node3;
+node3 -> node4;
+node4 -> node5;
+node4 -> node6;
+node6 -> node5;
+node3 -> node7;
+node7 -> node4;
+node7 -> node8;
+node8 -> node5;
+node7 -> node9;
+node9 -> node4;
+node9 -> node10;
+node10 -> node4;
+node2 -> node9;
+node1 -> node11;
+node11 -> node2;
+node1 -> node12;
+node12 -> node2;
+
+}
+</script>
+    </div>
+   </dd>
+   <dt class="body-small">
+    Supertypes
+   </dt>
+   <dd class="body-medium">
+    <div class="mono-small-block supertypes">
+     <div>
+      class <span data-unresolved-link="" t="n">TextArea</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">HasRows</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">HasColumns</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">TextComponent</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Component</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">UIElement</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Publisher</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Reactor</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Proxy</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Object</span>
+     </div>
+     <div>
+      trait <span data-unresolved-link="" t="n">Matchable</span>
+     </div>
+     <div>
+      class <span data-unresolved-link="" t="n">Any</span>
+     </div><span class="show-all-code show-content text-button h100">Show all</span>
+    </div>
+   </dd>
+   <dt class="body-small">
+    Self type
+   </dt>
+   <dd class="body-medium">
+    <div class="mono-small-block supertypes">
+     <span></span>
+     <div>
+      <a href="SimpleView$playerOrder$.html" t="n">playerOrder</a>.type
+     </div>
+    </div>
+   </dd>
+  </dl>
+ </section>
+</div>
+<section id="members-list">
+ <h2 class="h500">Members list</h2>
+ <div class="documentableFilter">
+  <div class="filtersContainer"></div>
+  <input class="filterableInput" placeholder="Filter by any phrase" data-test-id="filterBarInput" type="search"><button class="clearButton label-only-button" data-test-id="filterBarClearButton">Clear all</button>
+ </div>
+ <div class="membersList expand">
+  <div class="tabs">
+   <div class="contents">
+    <section id="Type-members">
+     <div data-togglable="Type members" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Type members" class="h400">Type members</h3>
+      </div>
+      <section id="Inherited-classlikes">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Inherited classlikes</h4>
+        </div>
+        <div class="documentableElement" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="signature-short"><span class="modifiers"></span><span class="kind"><span t="k">class </span></span><a href="../scala/swing/TextComponent$Caret.html" t="n" class="documentableName ">Caret</a><span t="k"> extends </span><span data-unresolved-link="" t="t">Publisher</span></span><span class="signature-long"></span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <a href="../scala/swing/TextComponent$Caret.html">TextComponent</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 trait <span data-unresolved-link="" t="n">Publisher</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Reactor</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span></span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Known subtypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block subtypes">
+                <div>
+                 object <a href="../scala/swing/TextComponent$caret$.html" t="n">caret</a>.type
+                </div><span></span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="signature-short"><span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="../scala/swing/TextComponent$caret$.html" t="n" class="documentableName ">caret</a><span t="k"> extends </span><a href="../scala/swing/TextComponent$Caret.html" t="t">Caret</a></span><span class="signature-long"></span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <a href="../scala/swing/TextComponent$caret$.html">TextComponent</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 class <a href="../scala/swing/TextComponent$Caret.html" t="n">Caret</a>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Publisher</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Reactor</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span class="show-all-code show-content text-button h100">Show all</span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="signature-short"><span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="../scala/swing/Component$keys$.html" t="n" class="documentableName ">keys</a><span t="k"> extends </span><span data-unresolved-link="" t="t">Publisher</span></span><span class="signature-long"></span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <a href="../scala/swing/Component$keys$.html">Component</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 trait <span data-unresolved-link="" t="n">Publisher</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Reactor</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span></span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">object </span></span><a href="../scala/swing/Component$mouse$.html" t="n" class="documentableName ">mouse</a>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Contains publishers for various mouse events. They are separated for efficiency reasons.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Contains publishers for various mouse events. They are separated for efficiency reasons.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <a href="../scala/swing/Component$mouse$.html">Component</a>
+              </dd>
+              <dt class="body-small">
+               Supertypes
+              </dt>
+              <dd class="body-medium">
+               <div class="mono-small-block supertypes">
+                <div>
+                 class <span data-unresolved-link="" t="n">Object</span>
+                </div>
+                <div>
+                 trait <span data-unresolved-link="" t="n">Matchable</span>
+                </div>
+                <div>
+                 class <span data-unresolved-link="" t="n">Any</span>
+                </div><span></span>
+               </div>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+    <section id="Value-members">
+     <div data-togglable="Value members" class="tab expand">
+      <div class="member-group-header">
+       <h3 data-togglable="Value members" class="h400">Value members</h3>
+      </div>
+      <section id="Inherited-methods">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Inherited methods</h4>
+        </div>
+        <div class="documentableElement" id="append-571" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#append-571" t="n" class="documentableName ">append</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">t</span>: <span data-unresolved-link="" t="t">String</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="background-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#background-0" t="n" class="documentableName ">background</a>: <span data-unresolved-link="" t="t">Color</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="background_=-813" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#background_=-813" t="n" class="documentableName ">background_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">c</span>: <span data-unresolved-link="" t="t">Color</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="border-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#border-0" t="n" class="documentableName ">border</a>: <span data-unresolved-link="" t="t">Border</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="border_=-fd2" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#border_=-fd2" t="n" class="documentableName ">border_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Border</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="bounds-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#bounds-0" t="n" class="documentableName ">bounds</a>: <span data-unresolved-link="" t="t">Rectangle</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="charWrap-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#charWrap-0" t="n" class="documentableName ">charWrap</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="charWrap_=-8ac" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#charWrap_=-8ac" t="n" class="documentableName ">charWrap_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">w</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="columns-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#columns-0" t="n" class="documentableName ">columns</a>: <span data-unresolved-link="" t="t">Int</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="columns_=-fffff3b3" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#columns_=-fffff3b3" t="n" class="documentableName ">columns_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">n</span>: <span data-unresolved-link="" t="t">Int</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="componentOrientation-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#componentOrientation-0" t="n" class="documentableName ">componentOrientation</a>: <span data-unresolved-link="" t="t">ComponentOrientation</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="componentOrientation_=-27b" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#componentOrientation_=-27b" t="n" class="documentableName ">componentOrientation_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">ComponentOrientation</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="copy-94c" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#copy-94c" t="n" class="documentableName ">copy</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="cursor-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#cursor-0" t="n" class="documentableName ">cursor</a>: <span data-unresolved-link="" t="t">Cursor</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="cursor_=-e7e" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#cursor_=-e7e" t="n" class="documentableName ">cursor_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">c</span>: <span data-unresolved-link="" t="t">Cursor</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="cut-94c" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#cut-94c" t="n" class="documentableName ">cut</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="deafTo-fffff9b7" data-f-inherited="Reactor">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#deafTo-fffff9b7" t="n" class="documentableName ">deafTo</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">ps</span>: <span data-unresolved-link="" t="t">Publisher</span>*): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Installed reaction won't receive events from the given publisher anylonger.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Installed reaction won't receive events from the given publisher anylonger.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Reactor</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="displayable-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#displayable-0" t="n" class="documentableName ">displayable</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="editable-0" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#editable-0" t="n" class="documentableName ">editable</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="editable_=-8ac" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#editable_=-8ac" t="n" class="documentableName ">editable_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="enabled-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#enabled-0" t="n" class="documentableName ">enabled</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="enabled_=-8ac" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#enabled_=-8ac" t="n" class="documentableName ">enabled_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="equals-4ad" data-f-keywords="override" data-f-inherited="Proxy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#equals-4ad" t="n" class="documentableName ">equals</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">that</span>: <span data-unresolved-link="" t="t">Any</span>): <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Compares the receiver object (<code>this</code>) with the argument object (<code>that</code>) for equivalence.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Compares the receiver object (<code>this</code>) with the argument object (<code>that</code>) for equivalence.</p> 
+              <p>Any implementation of this method should be an <a href="https://en.wikipedia.org/wiki/Equivalence_relation">equivalence relation</a>:</p> 
+              <ul> 
+               <li>It is reflexive: for any instance <code>x</code> of type <code>Any</code>, <code>x.equals(x)</code> should return <code>true</code>.</li> 
+               <li>It is symmetric: for any instances <code>x</code> and <code>y</code> of type <code>Any</code>, <code>x.equals(y)</code> should return <code>true</code> if and only if <code>y.equals(x)</code> returns <code>true</code>.</li> 
+               <li>It is transitive: for any instances <code>x</code>, <code>y</code>, and <code>z</code> of type <code>Any</code> if <code>x.equals(y)</code> returns <code>true</code> and <code>y.equals(z)</code> returns <code>true</code>, then <code>x.equals(z)</code> should return <code>true</code>.</li> 
+              </ul> 
+              <p>If you override this method, you should verify that your implementation remains an equivalence relation. Additionally, when overriding this method it is usually necessary to override <code>hashCode</code> to ensure that objects which are "equal" (<code>o1.equals(o2)</code> returns <code>true</code>) hash to the same <span data-unresolved-link="">scala.Int</span>. (<code>o1.hashCode.equals(o2.hashCode)</code>).</p> 
+             </div>
+             <h2 class="h200">Value parameters</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               that
+              </dt>
+              <dd class="body-medium">
+               <p>the object to compare against this object for equality.</p> 
+              </dd>
+             </dl>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Returns
+              </dt>
+              <dd class="body-medium">
+               <p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p> 
+              </dd>
+              <dt class="body-small">
+               Definition Classes
+              </dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">Proxy</span> -&gt; <span data-unresolved-link="">Any</span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Proxy</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="focusable-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#focusable-0" t="n" class="documentableName ">focusable</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="focusable_=-8ac" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#focusable_=-8ac" t="n" class="documentableName ">focusable_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="font-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#font-0" t="n" class="documentableName ">font</a>: <span data-unresolved-link="" t="t">Font</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="font_=-fffffb37" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#font_=-fffffb37" t="n" class="documentableName ">font_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">f</span>: <span data-unresolved-link="" t="t">Font</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="foreground-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#foreground-0" t="n" class="documentableName ">foreground</a>: <span data-unresolved-link="" t="t">Color</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="foreground_=-813" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#foreground_=-813" t="n" class="documentableName ">foreground_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">c</span>: <span data-unresolved-link="" t="t">Color</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="hasFocus-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#hasFocus-0" t="n" class="documentableName ">hasFocus</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="hashCode-ffffff27" data-f-keywords="override" data-f-inherited="Proxy">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#hashCode-ffffff27" t="n" class="documentableName ">hashCode</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Int</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Calculate a hash code value for the object.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Calculate a hash code value for the object.</p> 
+              <p>The default hashing algorithm is platform dependent.</p> 
+              <p>Note that it is allowed for two objects to have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>) yet not be equal (<code>o1.equals(o2)</code> returns <code>false</code>). A degenerate implementation could always return <code>0</code>. However, it is required that if two objects are equal (<code>o1.equals(o2)</code> returns <code>true</code>) that they have identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>). Therefore, when overriding this method, be sure to verify that the behavior is consistent with the <code>equals</code> method.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Returns
+              </dt>
+              <dd class="body-medium">
+               <p>the hash code value for this object.</p> 
+              </dd>
+              <dt class="body-small">
+               Definition Classes
+              </dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">Proxy</span> -&gt; <span data-unresolved-link="">Any</span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Proxy</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="ignoreRepaint-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#ignoreRepaint-0" t="n" class="documentableName ">ignoreRepaint</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="ignoreRepaint_=-8ac" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#ignoreRepaint_=-8ac" t="n" class="documentableName ">ignoreRepaint_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="inputVerifier-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#inputVerifier-0" t="n" class="documentableName ">inputVerifier</a>: <span data-unresolved-link="" t="t">Component</span><span t="k"> =&gt; </span><span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="inputVerifier_=-c9d" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#inputVerifier_=-c9d" t="n" class="documentableName ">inputVerifier_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">v</span>: <span data-unresolved-link="" t="t">Component</span><span t="k"> =&gt; </span><span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="lineCount-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#lineCount-0" t="n" class="documentableName ">lineCount</a>: <span data-unresolved-link="" t="t">Int</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="lineWrap-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#lineWrap-0" t="n" class="documentableName ">lineWrap</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="lineWrap_=-8ac" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#lineWrap_=-8ac" t="n" class="documentableName ">lineWrap_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">w</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="listenTo-fffff9b7" data-f-inherited="Reactor">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#listenTo-fffff9b7" t="n" class="documentableName ">listenTo</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">ps</span>: <span data-unresolved-link="" t="t">Publisher</span>*): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Listen to the given publisher as long as <code>deafTo</code> isn't called for them.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Listen to the given publisher as long as <code>deafTo</code> isn't called for them.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Reactor</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="locale-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#locale-0" t="n" class="documentableName ">locale</a>: <span data-unresolved-link="" t="t">Locale</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="location-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#location-0" t="n" class="documentableName ">location</a>: <span data-unresolved-link="" t="t">Point</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="locationOnScreen-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#locationOnScreen-0" t="n" class="documentableName ">locationOnScreen</a>: <span data-unresolved-link="" t="t">Point</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="maximumSize-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#maximumSize-0" t="n" class="documentableName ">maximumSize</a>: <span data-unresolved-link="" t="t">Dimension</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="maximumSize_=-fffffc56" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#maximumSize_=-fffffc56" t="n" class="documentableName ">maximumSize_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">Dimension</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="minimumSize-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#minimumSize-0" t="n" class="documentableName ">minimumSize</a>: <span data-unresolved-link="" t="t">Dimension</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="minimumSize_=-fffffc56" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#minimumSize_=-fffffc56" t="n" class="documentableName ">minimumSize_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">Dimension</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="name-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#name-0" t="n" class="documentableName ">name</a>: <span data-unresolved-link="" t="t">String</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="name_=-571" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#name_=-571" t="n" class="documentableName ">name_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">s</span>: <span data-unresolved-link="" t="t">String</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="opaque-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#opaque-0" t="n" class="documentableName ">opaque</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="opaque_=-8ac" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#opaque_=-8ac" t="n" class="documentableName ">opaque_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paint-a85" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#paint-a85" t="n" class="documentableName ">paint</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">g</span>: <span data-unresolved-link="" t="t">Graphics2D</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="paste-94c" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#paste-94c" t="n" class="documentableName ">paste</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="preferredSize-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#preferredSize-0" t="n" class="documentableName ">preferredSize</a>: <span data-unresolved-link="" t="t">Dimension</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="preferredSize_=-fffffc56" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#preferredSize_=-fffffc56" t="n" class="documentableName ">preferredSize_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">Dimension</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="publish-fffff45a" data-f-inherited="Publisher">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#publish-fffff45a" t="n" class="documentableName ">publish</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">e</span>: <span data-unresolved-link="" t="t">Event</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Notify all registered reactions.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Notify all registered reactions.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Publisher</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="repaint-fffff51f" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#repaint-fffff51f" t="n" class="documentableName ">repaint</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">rect</span>: <span data-unresolved-link="" t="t">Rectangle</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="repaint-94c" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#repaint-94c" t="n" class="documentableName ">repaint</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="requestFocus-94c" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#requestFocus-94c" t="n" class="documentableName ">requestFocus</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="requestFocusInWindow-fffff760" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#requestFocusInWindow-fffff760" t="n" class="documentableName ">requestFocusInWindow</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="revalidate-94c" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#revalidate-94c" t="n" class="documentableName ">revalidate</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="rows-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#rows-0" t="n" class="documentableName ">rows</a>: <span data-unresolved-link="" t="t">Int</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="rows_=-fffff3b3" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#rows_=-fffff3b3" t="n" class="documentableName ">rows_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">n</span>: <span data-unresolved-link="" t="t">Int</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="selectAll-94c" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#selectAll-94c" t="n" class="documentableName ">selectAll</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="selected-0" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#selected-0" t="n" class="documentableName ">selected</a>: <span data-unresolved-link="" t="t">String</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="self-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#self-0" t="n" class="documentableName ">self</a>: <span data-unresolved-link="" t="t">Any</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="showing-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#showing-0" t="n" class="documentableName ">showing</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="size-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#size-0" t="n" class="documentableName ">size</a>: <span data-unresolved-link="" t="t">Dimension</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="subscribe-fffff3bd" data-f-keywords="override" data-f-inherited="LazyPublisher">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#subscribe-fffff3bd" t="n" class="documentableName ">subscribe</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">listener</span>: <span data-unresolved-link="" t="t">Reaction</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Definition Classes
+              </dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">LazyPublisher</span> -&gt; <span data-unresolved-link="">Publisher</span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">LazyPublisher (hidden)</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="tabSize-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#tabSize-0" t="n" class="documentableName ">tabSize</a>: <span data-unresolved-link="" t="t">Int</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="tabSize_=-fffff3b3" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#tabSize_=-fffff3b3" t="n" class="documentableName ">tabSize_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">n</span>: <span data-unresolved-link="" t="t">Int</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="text-0" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#text-0" t="n" class="documentableName ">text</a>: <span data-unresolved-link="" t="t">String</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="text_=-571" data-f-inherited="TextComponent">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#text_=-571" t="n" class="documentableName ">text_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">t</span>: <span data-unresolved-link="" t="t">String</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextComponent</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="toString-0" data-f-keywords="override" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#toString-0" t="n" class="documentableName ">toString</a>: <span data-unresolved-link="" t="t">String</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Returns a string representation of the object.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Returns a string representation of the object.</p> 
+              <p>The default representation is platform dependent.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Returns
+              </dt>
+              <dd class="body-medium">
+               <p>a string representation of the object.</p> 
+              </dd>
+              <dt class="body-small">
+               Definition Classes
+              </dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">Component</span> -&gt; <span data-unresolved-link="">Proxy</span> -&gt; <span data-unresolved-link="">Any</span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="toolkit-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#toolkit-0" t="n" class="documentableName ">toolkit</a>: <span data-unresolved-link="" t="t">Toolkit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="tooltip-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#tooltip-0" t="n" class="documentableName ">tooltip</a>: <span data-unresolved-link="" t="t">String</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="tooltip_=-571" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#tooltip_=-571" t="n" class="documentableName ">tooltip_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">t</span>: <span data-unresolved-link="" t="t">String</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="unsubscribe-fffff3bd" data-f-keywords="override" data-f-inherited="LazyPublisher">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">override </span></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#unsubscribe-fffff3bd" t="n" class="documentableName ">unsubscribe</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">listener</span>: <span data-unresolved-link="" t="t">Reaction</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Definition Classes
+              </dt>
+              <dd class="body-medium">
+               <div>
+                <span data-unresolved-link="">LazyPublisher</span> -&gt; <span data-unresolved-link="">Publisher</span>
+               </div>
+              </dd>
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">LazyPublisher (hidden)</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="validate-94c" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#validate-94c" t="n" class="documentableName ">validate</a>(<span t="k"></span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="visible-0" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#visible-0" t="n" class="documentableName ">visible</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="visible_=-8ac" data-f-inherited="UIElement">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#visible_=-8ac" t="n" class="documentableName ">visible_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">b</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">UIElement</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="wordWrap-0" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#wordWrap-0" t="n" class="documentableName ">wordWrap</a>: <span data-unresolved-link="" t="t">Boolean</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="wordWrap_=-8ac" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#wordWrap_=-8ac" t="n" class="documentableName ">wordWrap_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">w</span>: <span data-unresolved-link="" t="t">Boolean</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="xLayoutAlignment-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#xLayoutAlignment-0" t="n" class="documentableName ">xLayoutAlignment</a>: <span data-unresolved-link="" t="t">Double</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>Used by certain layout managers, e.g., BoxLayout or OverlayLayout to align components relative to each other.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>Used by certain layout managers, e.g., BoxLayout or OverlayLayout to align components relative to each other.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="xLayoutAlignment_=-fffff7a5" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#xLayoutAlignment_=-fffff7a5" t="n" class="documentableName ">xLayoutAlignment_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">x</span>: <span data-unresolved-link="" t="t">Double</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="yLayoutAlignment-0" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#yLayoutAlignment-0" t="n" class="documentableName ">yLayoutAlignment</a>: <span data-unresolved-link="" t="t">Double</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="yLayoutAlignment_=-fffff7a5" data-f-inherited="Component">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">def </span></span><a href="SimpleView$playerOrder$.html#yLayoutAlignment_=-fffff7a5" t="n" class="documentableName ">yLayoutAlignment_=</a>(<span t="k"></span><span t="k"></span><span data-unresolved-link="" t="n">y</span>: <span data-unresolved-link="" t="t">Double</span>): <span data-unresolved-link="" t="t">Unit</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Component</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+      <section id="Inherited-fields">
+       <div class="documentableList expand">
+        <div class="documentableList-expander">
+         <button class="icon-button show-content expand"></button>
+         <h4 class="groupHeader h200">Inherited fields</h4>
+        </div>
+        <div class="documentableElement" id="listeners-0" data-f-visibility="protected" data-f-inherited="Publisher">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">protected </span></span><span class="kind"><span t="k">val </span></span><a href="SimpleView$playerOrder$.html#listeners-0" t="n" class="documentableName ">listeners</a>: <span t="t">RefSet</span>[<span data-unresolved-link="" t="t">Reaction</span>]
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="cover">
+             <div class="doc"></div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Publisher</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="peer-0" data-f-keywords="lazy,override" data-f-inherited="TextArea">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"><span t="k">lazy override </span></span><span class="kind"><span t="k">val </span></span><a href="SimpleView$playerOrder$.html#peer-0" t="n" class="documentableName ">peer</a>: <span data-unresolved-link="" t="t">JTextArea</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>The underlying Swing peer.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>The underlying Swing peer.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">TextArea</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="documentableElement" id="reactions-0" data-f-inherited="Reactor">
+         <div class="documentableElement-expander">
+          <button class="icon-button ar show-content"></button>
+          <div class="header monospace mono-medium">
+           <div class="signature">
+            <span class="modifiers"></span><span class="kind"><span t="k">val </span></span><a href="SimpleView$playerOrder$.html#reactions-0" t="n" class="documentableName ">reactions</a>: <span data-unresolved-link="" t="t">Reactions</span>
+           </div>
+          </div>
+         </div>
+         <div class="docs">
+          <span class="modifiers"></span>
+          <div>
+           <div class="originInfo"></div>
+           <div class="memberDocumentation">
+            <div class="documentableBrief doc">
+             <p>All reactions of this reactor.</p> 
+            </div>
+            <div class="cover">
+             <div class="doc">
+              <p>All reactions of this reactor.</p> 
+             </div>
+             <h2 class="h200">Attributes</h2>
+             <dl class="attributes attributes-small">
+              <dt class="body-small">
+               Inherited from:
+              </dt>
+              <dd class="body-medium">
+               <span data-unresolved-link="">Reactor</span>
+              </dd>
+             </dl>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+   </div>
+  </div>
+ </div>
+</section></div><div id="toc" class="body-small"><div id="toc-container"><span class="toc-title h200">In this article</span><nav class="toc-nav"><ul class="toc-list"><li><a href="#attributes">Attributes</a></li><li><a href="#members-list">Members list</a><ul><li><a href="#Type-members">Type members</a><ul><li><a href="#Inherited-classlikes">Inherited classlikes</a></li></ul></li><li><a href="#Value-members">Value members</a><ul><li><a href="#Inherited-methods">Inherited methods</a></li><li><a href="#Inherited-fields">Inherited fields</a></li></ul></li></ul></li></ul></nav></div></div></div><div id="footer" class="body-small mobile-footer"><div class="left-container">Generated with</div><div class="right-container"><a href="https://github.com/lampepfl/dotty"><button class="icon-button gh"></button></a><a href="https://twitter.com/scala_lang"><button class="icon-button twitter"></button></a><a href="https://discord.com/invite/scala"><button class="icon-button discord"></button></a><a href="https://gitter.im/scala/scala"><button class="icon-button gitter"></button></a><div class="text"></div></div><div class="text-mobile"></div></div></div></div></body></html>

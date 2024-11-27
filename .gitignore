@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# sbt specific
+dist/*
+target/global-logging
+target/streams
+target/task-temp-directory
+target/test-reports
+target/scala-3.3.1/classes
+target/scala-3.3.1/sync
+target/scala-3.3.1/test-classes
+target/scala-3.3.1/test-sync
+target/scala-3.3.1/test-zinc
+target/scala-3.3.1/update
+target/scala-3.3.1/zinc
+project/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+project/local-plugins.sbt
+.history
+.ensime
+.ensime_cache/
+.sbt-scripted/
+local.sbt
+bg-jobs
+target/scala-3.3.1/palace_3-0.3.0.jar
+
+# Bloop
+.bsp
+
+# VS Code
+.vscode/
+
+# Metals
+.bloop/
+.metals/
+metals.sbt
+
+# IDEA
+.idea
+.idea_modules
+/.worksheet/
